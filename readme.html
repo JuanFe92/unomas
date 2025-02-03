@@ -1,0 +1,85 @@
+/* Establecer la imagen como fondo */
+/* Estilos generales */
+body {
+    background-image: url("imagenes/daliymostaza.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    color: white; /* Color de texto principal */
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(11, 100, 53, 0.5); /* Fondo semitransparente */
+  }
+  
+  main {
+    padding: 20px;
+    display: grid; /* Habilitar grid para el main */
+    grid-template-areas:
+      "imagen1 imagen2" /* Dos columnas */
+      "imagen3 imagen4"; /* Dos filas */
+    grid-gap: 20px;
+  }
+  
+  main img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 5px solid transparent;
+    transition: border-color 0.5s ease;
+  }
+  
+  main img:nth-child(even) {
+    border-color: red;
+  }
+  
+  main img:nth-child(odd) {
+    border-color: blue;
+  }
+  
+  main img:hover {
+    border-color: yellow;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  }
+  
+  /* Estilos para el menú */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 10px;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: green; /* Color inicial del texto */
+    background-color: white; /* Color de fondo inicial */
+    border-radius: 5px; /* Bordes redondeados iniciales */
+    transition: 2s ease; /* Transición suave para cambios de estilo */
+  }
+  
+  nav a:hover {
+    background-color: lightgreen; /* Color de fondo al pasar el mouse */
+  }
+  
+  nav a:active {
+    background-color: blue; /* Color de fondo al hacer clic */
+    color: white; /* Color del texto al hacer clic */
+    border-radius: 50%; /* Bordes circulares al hacer clic */
+  }
